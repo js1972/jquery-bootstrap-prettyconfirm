@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-bootstrap-prettyconfirm : This is a jQuery plugin which implements a pretty confirm dialog using a twitter bootstrap modal dialog" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-bootstrap-prettyconfirm</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/js1972/jquery-bootstrap-prettyconfirm">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-bootstrap-prettyconfirm</h1>
+          <h2 id="project_tagline">This is a jQuery plugin which implements a pretty confirm dialog using a twitter bootstrap modal dialog</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/js1972/jquery-bootstrap-prettyconfirm/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/js1972/jquery-bootstrap-prettyconfirm/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jquery-bootstrap-prettyconfirm" class="anchor" href="#jquery-bootstrap-prettyconfirm"><span class="octicon octicon-link"></span></a>jquery-bootstrap-prettyconfirm</h1>
+
+<p>This is a jQuery plugin which implements a pretty confirm dialog using a twitter bootstrap modal dialog.
+It requires Twitter Bootstrap 3 but can easily be modified for 2 (the modals changed a bit in 3).
+Simply call prettyConfirm() on a jQuery collection and the plugin will kick onto action on the Click event.</p>
+
+<p><img src="prettyConfirm.PNG" alt="Sample prettyConfirm dialog"></p>
+
+<p>Example usage:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".action-cancel"</span><span class="p">).</span><span class="nx">prettyConfirm</span><span class="p">({</span>
+    <span class="s2">"heading"</span>           <span class="o">:</span> <span class="s2">"none"</span><span class="p">,</span>
+    <span class="s2">"question"</span>          <span class="o">:</span> <span class="s2">"Are you sure you wish to cancel? Cancellation cannot be undone."</span><span class="p">,</span>
+    <span class="s2">"cancelButtonTxt"</span>   <span class="o">:</span> <span class="s2">"Cancel"</span><span class="p">,</span>
+    <span class="s2">"okButtonTxt"</span>       <span class="o">:</span> <span class="s2">"Ok"</span><span class="p">,</span>
+    <span class="s2">"callback"</span>          <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">$elem</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"Do something..."</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-bootstrap-prettyconfirm maintained by <a href="https://github.com/js1972">js1972</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
